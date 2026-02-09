@@ -19,18 +19,18 @@ const techLogos = [
 const categories = ["tout", "Frontend", "Backend", "Outils"];
 
 const skills = [
-    { name: "JavaScript", level: "70%", category: "Frontend" },
-    { name: "Kotlin", level: "90%", category: "Backend" },
-    { name: "HTML/CSS", level: "90%", category: "Frontend" },
-    { name: "Java", level: "95%", category: "Backend" },
-    { name: "Spring Boot", level: "95%", category: "Backend" },
-    { name: "React", level: "60%", category: "Frontend" },
-    { name: "Tailwind CSS", level: "70%", category: "Frontend" },
-    { name: "Docker", level: "65%", category: "Outils" },
-    { name: "MySQLWorkbench", level: "100%", category: "Backend" },
-    { name: "GitLab", level: "100%", category: "Outils" },
-    { name: "Git", level: "100%", category: "Outils" },
-    { name: "Figma", level: "100%", category: "Outils" }
+    { name: "JavaScript", category: "Frontend" },
+    { name: "Kotlin", category: "Backend" },
+    { name: "HTML/CSS", category: "Frontend" },
+    { name: "Java", category: "Backend" },
+    { name: "Spring Boot", category: "Backend" },
+    { name: "React", category: "Frontend" },
+    { name: "Tailwind CSS", category: "Frontend" },
+    { name: "Docker", category: "Outils" },
+    { name: "MySQLWorkbench", category: "Backend" },
+    { name: "GitLab", category: "Outils" },
+    { name: "Git", category: "Outils" },
+    { name: "Figma", category: "Outils" }
     ]
     export const SkillSection = () => {
         const [activeCategory, setActiveCategory] = useState("tout");
@@ -71,7 +71,7 @@ const skills = [
                     {filteredSkills.map((skill,key)=>
                         <div key={key} className="bg-card p-6 rounded-lg shadow-xs card-hover">
                         <div>
-                            <h3 className='mb-5 text-left font-semibold text-large'>{skill.name}</h3>
+                            <h3 className='mb-5 text-center font-semibold text-large'>{skill.name}</h3>
                         </div>
                         <div className='w-full bg-secondary/50 h-2 rounded-full overflow-hidden'>
                             <div className='bg-primary h-2 rounded-full origin-left animate-[grow_0.5s_ease-in-out]' style={{ width: skill.level }}/>

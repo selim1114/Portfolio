@@ -1,6 +1,8 @@
 "use client";
 import SplitText from "./SplitText";
 import ShinyText from './ShinyText';
+import { ArrowBigDown } from "lucide-react";
+import AnimatedContent from "./AnimatedContent";
 
 export const HeroSection = () => {
     return (
@@ -76,7 +78,24 @@ export const HeroSection = () => {
                         </button>
                     </div>
                 </div>
+                <AnimatedContent
+                distance={150}
+                direction="vertical"
+                reverse={false}
+                duration={2}
+                ease="bounce.out"
+                initialOpacity={0.2}
+                animateOpacity
+                scale={1.1}
+                threshold={0.2}
+                delay={0.3}
+                >
+                    <div className="absolute-10 bottom-10 left-1/2">
+                    </div>
+                </AnimatedContent>
+
             </div>
+
         </section>
     );
 };

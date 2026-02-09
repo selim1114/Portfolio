@@ -3,62 +3,42 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
+    title: "Firebnb",
+    description: "Un clone d'Airbnb avec des fonctionnalités de base fait dans le cadre d'un projet académique.",
+    image: "/projects/firebnb.png",
+    tags: ["Kotlin", "Android studio"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/selim1114/FireBnb?tab=readme-ov-file",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "sharingHelp",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
+      "Application mobile de partage de ressources pour les personnes dans le besoin.",
+    image: "/projects/sharingHelp.png",
+    tags: ["java", "Springboot", "HTML", "CSS", "JavaScript"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/selim1114/Sharing-Help",
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "Firebnb API",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
+      "une API RESTful pour une application de location de logements avec la gestion d'authorisation en utilisant AUTH0.",
+    image: "/projects/image-Photoroom.png",
+    tags: ["Kotlin", "Springboot", "MySQLWorkbench, Auth0"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/aichasna/firebnb-api",
   },
     {
-    id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
-    githubUrl: "#",
+    id: 4,
+    title: "Progression",
+    description: "Plateforme éducative visant à rendre l’apprentissage plus fluide et reproductible ",
+    image: "/projects/progression.png",
+    tags: ["Docker", "Python", "Bash"],
+    demoUrl: "",
+    githubUrl: "https://git.dti.crosemont.quebec/progression",
   },
-  {
-    id: 2,
-    title: "Orbit Analytics Dashboard",
-    description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
-    demoUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    id: 3,
-    title: "E-commerce Platform",
-    description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
-    demoUrl: "#",
-    githubUrl: "#",
-  }
 ];
 
 export const ProjectSection = () => {
@@ -80,11 +60,11 @@ return (
                         key={key}
                         className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
                     >
-                        <div className="h-48 overflow-hidden">
+                        <div className="h-48 overflow-hidden flex justify-center">
                             <img
                                 src={project.image}
                                 alt={project.title}
-                                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                className=" h-full object-cover transition-transform duration-500 group-hover:scale-110"
                             />
                         </div>
 
